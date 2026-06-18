@@ -200,6 +200,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.03;letter-spa
 .closepartners .cp-krd{height:30px}
 .closepartners .cp-x{font-family:var(--serif);font-size:1.4rem;color:var(--text-faint)}
 .slot.vk img{max-width:82%;max-height:74px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.guests-slide{background:radial-gradient(ellipse at 50% 35%,#13201A 0%,#0A0F0C 72%)}
+.guests-photo-wrap{flex:0 1 auto;min-height:0;display:flex;justify-content:center;align-items:center;width:100%}
+.guests-photo-wrap img{max-width:min(560px,86vw);max-height:50vh;width:auto;height:auto;object-fit:contain;border-radius:10px;border:1px solid rgba(201,162,78,.22);box-shadow:0 24px 60px -24px rgba(0,0,0,.85)}
 /* line-item budget table */
 .btable{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:rgba(255,255,255,.5)}
 .on-img .btable{border-color:var(--line-dk);background:rgba(20,28,24,.5)}
@@ -344,8 +347,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.03;letter-spa
 @media(max-width:560px){
   .phases,.tiers,.stats.s2,.stats.s3,.stats.s4{grid-template-columns:1fr}
   .g4[style*="repeat(4"]{grid-template-columns:1fr!important}
-  .stage{justify-content:flex-start;padding-top:3.6rem;padding-bottom:5rem}
-  .stage.wide{padding-top:3.6rem!important;padding-bottom:5rem!important}
+  .stage{justify-content:flex-start;padding-top:4.2rem;padding-bottom:4.6rem}
+  .stage.wide{padding-top:4.2rem!important;padding-bottom:4.6rem!important}
   .huge{font-size:clamp(2.4rem,11vw,3.6rem)}
   .display{font-size:clamp(1.9rem,8.5vw,2.6rem)!important}
   .kicker{font-size:clamp(1.7rem,7.5vw,2.3rem)!important}
@@ -359,8 +362,28 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.03;letter-spa
   .sponsors{grid-template-columns:1fr 1fr}
   .slot{min-height:54px;font-size:.6rem}
   .closepartners .cp-eagle{height:36px}.closepartners .cp-krd{height:24px}
-  .nav{bottom:.5rem}.btn-pdf,.btn-over{padding:.42rem .7rem;font-size:.56rem}
-  .crestmark{width:22px;height:22px;flex-basis:22px}
+  .crestmark{width:20px;height:20px;flex-basis:20px}
+  .guests-photo-wrap img{max-height:56vh;max-width:90vw}
+
+  /* --- CLEAN MOBILE CONTROLS --- */
+  /* hide page dots + hint to declutter */
+  .dots{display:none!important}
+  .hint{display:none!important}
+  .progbar{display:none!important}
+  /* bottom nav = just prev/next arrows pinned to the corners */
+  .nav{bottom:0;left:0;right:0;transform:none;width:100%;justify-content:space-between;padding:0 14px env(safe-area-inset-bottom,12px);pointer-events:none;background:linear-gradient(to top,rgba(10,15,12,.55),transparent)}
+  .viewport:not(.dark-chrome) .nav{background:linear-gradient(to top,rgba(247,244,236,.6),transparent)}
+  .nav>*{pointer-events:auto}
+  .navbtn{width:48px;height:48px}
+  /* Overview + PDF -> compact pills, fixed top-right, out of the content */
+  .btn-over,.btn-pdf{position:fixed;top:14px;z-index:90;margin:0;padding:.5rem .8rem;font-size:.56rem;border-radius:30px}
+  .btn-over{right:14px}
+  .btn-pdf{right:104px}
+  /* nudge top section label down a touch so it clears the pills row visually */
+  .chrome.tr{display:none}
+  /* page counter bottom-center, above arrows */
+  .chrome.br{left:50%;right:auto;bottom:62px;transform:translateX(-50%);font-size:.82rem}
+  .chrome.bl{display:none}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important}
@@ -590,14 +613,17 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.03;letter-spa
     </div>
   </section>
 
-  <!-- 10 · DISTINGUISHED GUESTS (real photo) -->
-  <section class="slide" data-section="Distinguished Guests" data-tone="dark" data-tr="fade">
-    <div class="bg kb"><img src="assets/img/guests-photo.jpg" alt="Islam Makhachev and Khabib Nurmagomedov at the Eagle FC Kurdistan promo area"></div>
-    <div class="scrim bottom"></div><div class="scrim vig"></div>
-    <div class="stage on-img" style="justify-content:flex-end;padding-bottom:clamp(2.4rem,6vh,4rem)">
-      <span class="eyebrow" data-a>Distinguished Guests</span>
-      <h2 class="display" data-a data-d="1" style="margin:.4rem 0 .6rem">Already <em>in the room.</em></h2>
-      <p class="lead lg" data-a data-d="2" style="max-width:62ch">Islam Makhachev and Khabib Nurmagomedov at the Eagle FC Kurdistan showcase, the calibre of name this event is built to bring to Erbil.</p>
+  <!-- 10 · DISTINGUISHED GUESTS (real photo, full / contained) -->
+  <section class="slide guests-slide" data-section="Distinguished Guests" data-tone="dark" data-tr="fade">
+    <div class="stage" style="justify-content:center;gap:clamp(1rem,2.5vh,1.6rem);padding-top:clamp(3.4rem,5vh,4rem);padding-bottom:clamp(4rem,7vh,5rem)">
+      <div style="text-align:center">
+        <span class="eyebrow c" data-a>Distinguished Guests</span>
+        <h2 class="kicker" data-a data-d="1" style="margin:.4rem 0 .2rem">Already <em>in the room.</em></h2>
+      </div>
+      <div class="guests-photo-wrap" data-a data-d="2">
+        <img src="assets/img/guests-photo-full.jpg" alt="Islam Makhachev and Khabib Nurmagomedov at the Eagle FC Kurdistan showcase">
+      </div>
+      <p class="lead" data-a data-d="3" style="text-align:center;margin:0 auto;max-width:64ch">Islam Makhachev and Khabib Nurmagomedov at the Eagle FC Kurdistan showcase, the calibre of name this event is built to bring to Erbil.</p>
     </div>
   </section>
 
@@ -950,7 +976,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.03;letter-spa
           <div class="browi"><span class="il">Arman Tsarukyan Purse<small>Headline contender bout</small></span><span class="iv">Major</span></div>
           <div class="browi"><span class="il">Other Fighters Pay<small>Full professional card · 10 fighters</small></span><span class="iv">Card</span></div>
           <div class="browi"><span class="il">Khabib Nurmagomedov<small>Special guest &amp; premium access</small></span><span class="iv">Guest</span></div>
-          <div class="browi"><span class="il">Management Fee<small>Coordination, matchmaking, operations, full management</small></span><span class="iv">Eagle FC</span></div>
+          <div class="browi"><span class="il">Management Fee<small>Coordination, matchmaking, overseeing operations, promoting the fight, full management</small></span><span class="iv">Eagle FC</span></div>
           <div class="browi total"><span class="il">Total Core Investment</span><span class="iv">$5.5M</span></div>
         </div>
         <div data-a data-d="4">
