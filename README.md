@@ -1,90 +1,66 @@
-# Eagle FC Erbil — Cinematic Proposal Deck
+# Eagle FC: Summit of Champions — Cinematic Proposal Deck
 
-A presentation-grade HTML deck proposing a landmark **Eagle FC** combat-sports event beside
-**Gomaspan Dam, Erbil**, anchoring a one-month cultural carnival and a global broadcast moment
-for the Kurdistan Region. Audience: the Kurdistan Regional Government, tourism leaders, and sponsors.
+A presentation-grade deck proposing **Eagle FC: Summit of Champions**, a landmark MMA and wrestling
+event beside **Gomaspan Dam, Erbil**, anchoring **Summit Week** (a month-long cultural carnival) and a
+global broadcast moment for the Kurdistan Region. Prepared as **a proposal to KRD Holding**.
 
-It now uses the **real Eagle FC eagle logo** throughout — gold on the cinematic dark slides, and a
-clean deep-pine "light format" lockup on the light slides (including a dedicated brand slide).
+Tagline: *Where the best in the world meet at the peak.*
 
 ---
 
-## Two versions are included — pick whichever suits you
+## What's in this folder
 
 ### 1. `Eagle-FC-Erbil.html` — single self-contained file (recommended for sharing)
-Every image and the logo are **embedded directly inside this one file**. You can email it, drop it
-in a message, move it anywhere, or open it offline and **all images always display** — there is no
-separate folder to keep with it. Just double-click to open in any modern browser. (~10 MB.)
+Every image and logo is embedded inside this one file. Email it, message it, move it anywhere, or
+open it offline and all images always display. Just double-click to open in any modern browser.
 
-### 2. `eagle-fc-erbil/` folder — for GitHub Pages / a web server
-Contains `index.html` plus the `assets/` folder (lighter individual files, loads fastest online).
-Use this one when publishing to a website. Keep the folder structure intact.
+### 2. `Eagle-FC-Summit-of-Champions.pdf` — ready-made clean PDF
+A pixel-perfect, 37-page landscape PDF of the full deck. Nothing overlaps, text is sharp, one slide
+per page. Use this for printing or for anyone who prefers a PDF.
 
-Both versions are identical in content and behaviour — 35 slides.
+### 3. `eagle-fc-erbil/` folder — for GitHub Pages / a web server
+`index.html` plus the `assets/` folder (lighter individual files, loads fastest online) and a copy of
+the PDF. Use this when publishing to a website; keep the folder structure intact.
+
+All three are the same 37-slide deck.
 
 ---
 
-## How to present it
+## Presenting it
 
-It behaves like a keynote — 35 slides, click-through (not scrolling).
+Behaves like a keynote, click-through (not scrolling).
 
 | Action | Control |
 | --- | --- |
-| Next slide | **→**, **Space**, **Page Down**, click the right edge, or swipe left |
-| Previous slide | **←**, **Page Up**, click the left edge, or swipe right |
-| Jump to any slide | Click a dot, or press **O** for the visual **overview grid** and click a thumbnail |
-| First / last slide | **Home** / **End** |
-| Close overview | **Esc** or press **O** again |
+| Next / Previous | Arrow keys, Space, Page keys, click the screen edges, or swipe |
+| Jump to a slide | Click a dot, or press **O** for the overview grid |
+| Download / print PDF | Click the **PDF** button in the bottom bar (or use the ready-made PDF file) |
+| First / last | Home / End |
 
-The bottom bar has prev/next arrows, slide dots, and an **Overview** button; the slide counter sits
-bottom-right. On phones and tablets, swipe to navigate.
+On phones and tablets, swipe to navigate.
 
-## Cinematic features
+## What changed in this version
 
-- The **real Eagle FC logo** as the cover and closing seal, the corner crest (auto-switches gold on
-  dark slides / deep-pine on light slides), and a dedicated **light-format brand slide**
-- **Full-bleed imagery** with slow **Ken Burns** motion on hero slides (Apple/Tesla feel)
-- **Cross-dissolve + scale** transitions with staggered content reveals
-- **Animated number counters** on every data slide and **animated charts** (tourism trajectory,
-  investment allocation) that grow when the slide appears
-- **Glassmorphism** navigation, gold-foil headlines, film-grain + vignette texture
-- **Auto-adapting chrome** (light/dark per slide) and strong scrims so every line stays legible
-
-## Exporting to PDF
-
-Open either HTML file in **Chrome → Ctrl/Cmd + P → Save as PDF**, **Layout: Landscape**,
-**Margins: None**, **Background graphics: on**. Every slide prints on its own page.
+- Retitled **Eagle FC: Summit of Champions**, with **Summit Week** as the festival wrap.
+- Now addressed **to KRD Holding** (cover, Next Steps, and a closing Eagle FC × KRD Holding lockup).
+- Uses the **real Eagle FC logo** throughout, plus the **KRD Holding** and **Visit Kurdistan** logos.
+- New **The Card & Guests** slide: Islam Makhachev, Agit Kabayel, Namo Fazil, Khabib Nurmagomedov,
+  and the likeness of Arman Tsarukyan and other UFC fighters and celebrities.
+- New financial section: **Tentative Budget ($5.5M)**, **Additional Costs**, and **The Return
+  ($7.75M potential revenue)**, each with professional disclaimers.
+- **Visit Kurdistan** added as the lead sponsor.
+- All em dashes removed; combined social reach of 75M+ featured; copy de-duplicated.
+- **Download PDF button** and a clean print stylesheet; mobile layout strengthened.
 
 ## Publishing to GitHub Pages
 
-Use the **`eagle-fc-erbil/`** folder. Upload `index.html` and the `assets/` folder (keep structure),
-then enable **Settings → Pages → Deploy from branch (main / root)**. Your link will be
-`https://<username>.github.io/eagle-fc-erbil/`. (The single-file version also works on Pages if you
-prefer to upload just the one file.)
-
----
-
-## What's inside — 35 slides
-
-Cover · **Brand (logo, light format)** · Contents · Executive Summary · At a Glance · The Vision ·
-What This Is · Why Eagle FC · The Names (Khabib & Islam) · The Global Reach · The Khabib + Islam
-Effect · Why Erbil · Erbil & Kurdistan Today · Gomaspan Dam · Tourism Trajectory · Tourism Impact ·
-Case Study: Abu Dhabi · The One-Month Carnival · The Event Model · Proposed Timeline ·
-Logistics I–III · Broadcast · Ticketing & Hospitality · Sponsorship · Investment Framework ·
-Government Benefits · Culture · Economic Impact · The Visual Experience · Risk Management · Legacy ·
-Next Steps · The Invitation.
+Upload the contents of the **`eagle-fc-erbil/`** folder (`index.html` + `assets/` + the PDF), keeping
+structure, then enable **Settings → Pages → Deploy from branch (main / root)**.
 
 ## A note on the numbers
 
-- **Sourced facts** (citable): Kurdistan demographics from the **October 2024 Iraq census**; tourism
-  figures (≈8M visitors in 2024, ~12× growth since 2015, $1.3B+ revenue, 480+ hotels, 20M-by-2030
-  target) from **KRG / Invest Kurdistan**; fighter reach (UFC 229's record 2.4M PPV buys; Islam
-  Makhachev as reigning #1 pound-for-pound double champion on a 16-fight streak) from **public
-  reporting and Guinness World Records**.
-- **Illustrative projections** (clearly labelled): any event-specific attendance or local economic
-  figures, presented as ranges pending confirmed scope.
-
-All imagery is bespoke, on-brand artwork supplied for this project — no third-party stock — keeping
-the deck rights-clean and visually consistent.
+Demographic and tourism figures are drawn from public sources (2024 Iraq census; KRG / Invest
+Kurdistan). Fighter reach reflects public reporting. All budget and revenue figures are tentative and,
+as noted on each slide, expected to change with confirmed scope. Imagery is bespoke, on-brand artwork.
 
 *Confidential proposal · 2026.*
